@@ -26,6 +26,9 @@ def check_filter(row):
             row[index] = "ok"
     return row
 
+	
+	
+	
 
 if __name__ == '__main__':
     
