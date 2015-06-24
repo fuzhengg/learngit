@@ -1,0 +1,50 @@
+
+s  orddate_lasttime_ordercount
+s  dprpt_roomrank_sumquantity_different_timeInterval
+b  dprpt_roomrank_weekly_avgprice_different_star1
+s  same_masterhotel_price
+s  same_masterbasicroom_price
+b  CityStar_orderinfo
+b  userlibrary
+b  xl_online_ubtfeature
+b  hoteldiminfo
+b  uid_starinfo
+b  uid_lastorderinfo
+b  dprpt_crhotel_dim
+s  dprpt_crhotelroom_dim
+
+
+
+
+
+d
+,max(case tableneme when 'dw_htlbizdb.orddate_lasttime_ordercount' then count else 0 end) orddate_lasttime_ordercount
+,max(case tableneme when 'dw_htlbizdb.dprpt_roomrank_sumquantity_different_timeInterval' then count else 0 end) roomrank_sumquantity_different_timeInterval
+,max(case tableneme when 'dw_htlbizdb.dprpt_roomrank_weekly_avgprice_different_star1' then count else 0 end) roomrank_weekly_avgprice_different_star1
+,max(case tableneme when 'dw_htlbizdb.same_masterhotel_price' then count else 0 end) same_masterhotel_price
+,max(case tableneme when 'dw_htlbizdb.same_masterbasicroom_price' then count else 0 end) same_masterbasicroom_price
+,max(case tableneme when 'dw_htlbizdb.CityStar_orderinfo' then  count else 0 end) CityStar_orderinfo
+,max(case tableneme when 'dw_htlbizdb.userlibrary' then count else 0 end) userlibrary
+,max(case tableneme when 'dw_htlbizdb.xl_online_ubtfeature' then count else 0 end) xl_online_ubtfeature
+,max(case tableneme when 'dw_htlbizdb.hoteldiminfo' then  count else 0 end) hoteldiminfo
+,max(case tableneme when 'dw_htlbizdb.uid_starinfo' then  count else 0 end) uid_starinfo
+,max(case tableneme when 'dw_htlbizdb.uid_lastorderinfo' then  count else 0 end) uid_lastorderinfo
+,max(case tableneme when 'dw_htlbizdb.dprpt_crhotel_dim' then  count else 0 end) dprpt_crhotel_dim
+,max(case tableneme when 'dw_htlbizdb.dprpt_crhotelroom_dim' then  count else 0 end) dprpt_crhotelroom_dim
+
+右坐标轴
+orddate_lasttime_ordercount
+roomrank_sumquantity_different_timeinterval
+same_masterhotel_price
+same_masterbasicroom_price
+dprpt_crhotelroom_dim
+dprpt_crhotel_dim
+CityStar_orderinfo
+
+左坐标轴
+userlibrary
+xl_online_ubtfeature
+hoteldiminfo
+uid_starinfo
+uid_lastorderinfo
+roomrank_weekly_avgprice_different_star1
